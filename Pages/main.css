@@ -4,7 +4,8 @@
 }
 
 body { 
-    background-color: white;
+    background-image: url(../Imagenes/floor-tile.png);
+    font-family: "Open Sans", Helvetica, sans-serif;
     color: rgba(92, 8, 8, 0.753);
     width: 95vw;
 
@@ -21,9 +22,10 @@ header{
     grid-area: header;
 }
 .header{
+
     color: rgba(92, 8, 8, 0.753);
     font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     padding: 2px;
     margin: 2px;
     display: flex;
@@ -34,7 +36,7 @@ header{
 
 .header-logo {
     width: 120px;
-    height: 50px;
+    height: auto;
     padding: 10px 0px;
     align-items: initial;
     
@@ -45,14 +47,8 @@ header{
     font-size: 15px;
     padding: 10px 0px;
 }
-nav{
-    background-image: url(../Imagenes/floor-tile.png);
-    text-align: start;
-    grid-area: nav;
-    
 
-}
-.menu{
+.navbar{
     display: flex;
     flex-direction: row;
     flex-direction: start;
@@ -60,6 +56,12 @@ nav{
     text-transform: capitalize;
     text-decoration: none;
     color: rgba(92, 8, 8, 0.753);
+    background-color: white;
+    text-align: start;
+    grid-area: nav;
+}
+.nav-item{
+    
 }
 .menu li{
     padding: 0px;
@@ -75,6 +77,20 @@ main{
     margin: 1px;
     padding: 1px;
 }
+.carousel-slide img{
+    height: 450px;
+
+}
+
+.carousel-caption p{
+    font-size: 30px;
+    color:rgba(92, 8, 8, 0.753)
+
+}
+.carousel-caption h5{
+    color: rgba(92, 8, 8, 0.753);
+}
+
 .hist{
     font-style: italic;
     font-family: 'Anek Tamil', sans-serif;  
@@ -194,14 +210,14 @@ footer li{
 
 .contact-form{
     background-color: beige;
-    width: 200px;
-    height: 100px;
+    width: 600px;
+    height: 300px;
     font-size: 11px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 70px 0px;
+    padding: 70px 100px;
 
 }
 .enviar {
@@ -224,8 +240,8 @@ footer li{
     
     
     .header-logo {
-        width: 150px;
-        height: 70px;
+        width: 200px;
+        height: auto;
         
         
     }
@@ -330,27 +346,26 @@ footer li{
     .header{    
         padding: 10px;
         margin: 10px;
-
-        
+     
     }
     
     .header-logo {
-        width: 250px;
-        height: 100px;
+        width: 150px;
+        height: auto;
         align-items: initial;
         
     }
     .header-slogan{
      
-        font-size: 50px;
+        font-size: 20px;
     }
-    .menu li{
-        font-size: 25px;
+    .navbar{
+        font-size: 20px;
         padding: 0px 5px;
         transition: all .3seg ease-in-out;
     }
-    .menu li:hover {
-        font-size: 30px;
+    .navbar:hover {
+        font-size: 25px;
         color: black;    
         
     }
@@ -376,12 +391,13 @@ footer li{
         font-size: 25px;
 
     }
+    
     .image{
         width: 200px;
     }
-    #producto img {
-        width: 130px;
-        height: 130px;
+    .card img {
+        width: 400px;
+        height: 400px;
     }
 
     .video{
