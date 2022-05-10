@@ -356,12 +356,13 @@ footer li{
     }
 
     .contact{
-        height: 450px;
-        width: 300px;
+        height: 300px;
+        width: 400px;
     }
     .contact-form{
         background-color: beige;
         font-size: 17px;
+    }
 
     .contenedor {
         display: grid;
@@ -488,6 +489,16 @@ footer li{
     .btn{
         font-size: 22px;
     }
+
+    .contact{
+        height: 300px;
+        width: 500px;
+    }
+    .contact-form{
+        background-color: beige;
+        font-size: 20px;
+    }
+
     .video{
         width: 400px;
         height: 300px;
