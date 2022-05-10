@@ -11,8 +11,7 @@ body {
 
     display: grid;
     grid-template-areas: 
-    "header"
-    "nav" 
+    "header" 
     "main"
     "footer";
     grid-gap: 1px;
@@ -35,7 +34,7 @@ header{
 }
 
 .header-logo {
-    width: 120px;
+    width: 75px;
     height: auto;
     padding: 10px 0px;
     align-items: initial;
@@ -58,32 +57,22 @@ header{
     color: rgba(92, 8, 8, 0.753);
     background-color: white;
     text-align: start;
-    grid-area: nav;
+    font-size: 13px;
 }
-.nav-item{
-    
-}
-.menu li{
-    padding: 0px;
-    margin: 0px;
-    font-size: 11px;
-    
-}
-.menu ul{ 
-    margin: 0px;
-}
+
+
 main{ 
     grid-area: main;
     margin: 1px;
     padding: 1px;
 }
 .carousel-slide img{
-    height: 450px;
+    height: 100px;
 
 }
 
 .carousel-caption p{
-    font-size: 30px;
+    font-size: 10px;
     color:rgba(92, 8, 8, 0.753)
 
 }
@@ -131,8 +120,22 @@ span {
 div p {
     color: black; 
     font-style: italic;
-    font-size: 12px;
+    font-size: 10px;
     
+}
+
+.carousel-slide img{
+    height: 200px;
+
+}
+
+.carousel-caption p{
+    font-size: 15px;
+    color:rgba(92, 8, 8, 0.753)
+
+}
+.carousel-caption h5{
+    color: rgba(92, 8, 8, 0.753);
 }
 
 footer{
@@ -163,34 +166,46 @@ footer li{
     width: 20px;
     height: 20px;
 }
-
-#producto img {
-    width: 80px;
-    height: 80px;
-}
-
-#producto div{
-    display: inline-block;
-    order: initial;
-    padding: 0 20px;
-    background-color: beige;
-}
-
-.p1 .p2 .p3 {
+.card-father{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.card {
+    background-color: beige;
+    width: 7rem;
+    height: auto;
 
 }
- .contenedor {
+.card-img-top{
+    width: 6rem;
+    height: 6rem;
+   
+}
+.card-body{
+    width: 6rem;
+    height: auto;
+
+}
+.card-body h5{
+    font-size: 10px ;
+}
+.card-body p{
+    font-size: 9px;
+}
+.btn{
+    font-size: 10px;
+}
+
+
+.contenedor {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: beige;
     color: black;
 }
-
 .video{
     width: 250px;
     height: auto;
@@ -207,17 +222,17 @@ footer li{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
 }
-
+.contact{
+    height: 300px;
+    width: 200px;
+}
 .contact-form{
     background-color: beige;
-    width: 600px;
-    height: 300px;
     font-size: 11px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 70px 100px;
 
 }
 .enviar {
@@ -230,7 +245,6 @@ footer li{
         display: grid;
     grid-template-areas: 
     "header"
-    "nav"
     "main"
     "footer";
     grid-gap: 10px;
@@ -239,17 +253,31 @@ footer li{
     }
     
     
+    .header{    
+        padding: 5px;
+        margin: 5px;
+     
+    }
+    
     .header-logo {
-        width: 200px;
+        width: 100px;
         height: auto;
-        
+        align-items: initial;
         
     }
     .header-slogan{
-        font-size: 30px;
+     
+        font-size: 15px;
     }
-    .menu li{
+    .navbar{
+        font-size: 15px;
+        padding: 0px 5px;
+        transition: all .3seg ease-in-out;
+    }
+    .navbar:hover {
         font-size: 20px;
+        color: black;    
+        
     }
 
     .geo {
@@ -301,11 +329,39 @@ footer li{
         font-size: 18px;
         
     }
-
-    #producto img {
-        width: 100px;
-        height: 100px;
+    .card {
+        background-color: beige;
+        width: 10rem;
+        height: auto;
+    
     }
+    .card-img-top{
+        width: 9rem;
+        height: 9rem;
+       
+    }
+    .card-body{
+        width: 9rem;
+        height: auto;
+    
+    }
+    .card-body h5{
+        font-size: 17px ;
+    }
+    .card-body p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 17px;
+    }
+
+    .contact{
+        height: 450px;
+        width: 300px;
+    }
+    .contact-form{
+        background-color: beige;
+        font-size: 17px;
 
     .contenedor {
         display: grid;
@@ -359,6 +415,19 @@ footer li{
      
         font-size: 20px;
     }
+    .carousel-slide img{
+        height: 450px;
+    
+    }
+    
+    .carousel-caption p{
+        font-size: 30px;
+        color:rgba(92, 8, 8, 0.753)
+    
+    }
+    .carousel-caption h5{
+        color: rgba(92, 8, 8, 0.753);
+    }
     .navbar{
         font-size: 20px;
         padding: 0px 5px;
@@ -395,11 +464,30 @@ footer li{
     .image{
         width: 200px;
     }
-    .card img {
-        width: 400px;
-        height: 400px;
+    .card {
+        width: 20rem;
+        height: auto;
+    
     }
-
+    .card-img-top{
+        width: 13rem;
+        height: 12rem;
+       
+    }
+    .card-body{
+        width: 12rem;
+        height: auto;
+    
+    }
+    .card-body h5{
+        font-size: 22px ;
+    }
+    .card-body p{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 22px;
+    }
     .video{
         width: 400px;
         height: 300px;
